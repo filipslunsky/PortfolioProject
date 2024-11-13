@@ -1,0 +1,130 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    
+}
+
+#header {
+    position: relative;
+    background-image: url('img/headerback.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#header .container {
+    z-index: 2;
+    position: relative;
+    color: #fff;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-nav {
+    margin-top: 10px;
+}
+
+section {
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+    section {
+        margin-bottom: 30px;
+    }
+    .bubble {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.bubbles-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.bubble {
+    background-color: rgba(149, 181, 216, 0.3);
+    color: white;
+    border-radius: 50%;
+    padding: 15px 25px;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bubble:hover {
+    background-color: rgba(126, 169, 216, 0.5);
+    transform: scale(1.1);
+}
+
+#about, #contact {
+    background-color: #222;
+    color: white;
+}
+
+#about h2, #contact h2 {
+    color: rgb(92, 92, 154);
+}
+
+#about p, #contact p, #contact ul a {
+    color: #5f82ba;
+}
+
+.profile-img {
+    float: left;
+    height: 240px;
+    border-radius: 120px;
+}
