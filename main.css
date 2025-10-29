@@ -53,6 +53,10 @@ body {
     margin-top: 10px;
 }
 
+.bubble {
+    cursor: default;
+}
+
 section {
     margin: 0;
     padding-top: 80px;
